@@ -8,12 +8,18 @@ body {
     height: auto;
     background-color: aquamarine;
 }
+#score {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 60px;
+    color: azure;
+}
 #heading {
     text-align: center;
     font-family: sans-serif;
     font-size: 60px;
     color: blue;
-    margin: 10vh 0vh;
+    margin: 6vh 0vh;
 }
 .question {
     display: flex;
