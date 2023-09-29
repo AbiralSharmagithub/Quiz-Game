@@ -1,41 +1,24 @@
-    let optionGiven = document.getElementsByClassName("option-1");
-    let rightAnswer = document.getElementsByClassName("right");
-    let questionAnswer = document.getElementsByClassName("question");
-    let submitAnswer = document.getElementsByClassName("submit");
+// Get all of the question class elements.
+const questionElements = document.querySelectorAll('.question');
+// Add a click event listener to each question element.
+questionElements.forEach(questionElement => {
+  questionElement.addEventListener('click', function(event) {
+    // Get the clicked element.
+    const clickedElement = event.target;
 
-     for(let i=0; i < questionAnswer.length; i++) {
-      for(let j=0; j < optionGiven.length; j++) {
-        optionGiven[j].addEventListener("click", function () {
-         if(rightAnswer[j] === optionGiven[j])
-       {  
-           questionAnswer[i].style.backgroundColor="green";
-       }
-       else
-       {
-           questionAnswer[i].style.backgroundColor="red";
-       }
+    // Check if the clicked element is an option element.
+    if (clickedElement.classList.contains('option-1')) {
+      // Get the question element that contains the clicked element.
+      const questionParentElement = clickedElement.closest('.question');
+
+      // Check if the clicked element is the right answer.
+      if (clickedElement.classList.contains('right')) {
+        // Change the background color of the question element to green.
+        questionParentElement.style.backgroundColor = 'green';
+      } else {
+        // Change the background color of the question element to red.
+        questionParentElement.style.backgroundColor = 'red';
       }
-     )
     }
-    }
- 
- // for (let i = 0; i < questionAnswer.length; i++) {
-//     //Store the correct answer for the current question in a variable
-//    let currentRightAnswer = rightAnswer[i];
-//    for (let j = 0; j < optionGiven.length; j++) {
-//      optionGiven[j].addEventListener("click", function () {
-//      //   Check if the clicked option is the correct answer for this question
-//        if (currentRightAnswer === optionGiven[j]) {
-//       //    Change the background color of the specific question
-//          questionAnswer[i].style.backgroundColor = "green";
-//        } else {
-//          questionAnswer[i].style.backgroundColor = "red";
-//        }
-//      });
-//    }
-//  }
-
-
-
-
-
+  });
+});
