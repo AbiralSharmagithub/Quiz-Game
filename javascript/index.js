@@ -147,7 +147,7 @@ const Questions = [
       if (selectedOption.value === correctAnswer) {
         // Change background color to green for correct answer
         listItem.style.backgroundColor = "green";
-  
+        listItem.innerHTML = '<p>Correct! Well done You got plus one!,Now move to the next question.</p>';
         // Increment the score for a correct answer
         score +=1;
   
@@ -156,6 +156,7 @@ const Questions = [
       } else {
         // Change background color to red for wrong answer
         listItem.style.backgroundColor = "red";
+        listItem.innerHTML = '<p>Sorry!Incorrect.plz refresh the browser to play this quiz again.</p>';
       }
   
       // Remove the event listener to prevent multiple submissions for the same question
