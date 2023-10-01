@@ -8,18 +8,40 @@ body {
     height: auto;
     background-color: aquamarine;
 }
+.score-container {
+    position: sticky;
+    top: 0;
+    background-color: aqua; /* Background color for the sticky container */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+    z-index: 1000; /* Ensure it's above other content */
+  }
 #score {
+    position: sticky;
+    top: 0;
+    background-color: blue;
     text-align: center;
     font-family: sans-serif;
     font-size: 50px;
     color: azure;
+    z-index: 1000;
+    opacity: 0.4;
 }
 #add-score {
+    position: sticky;
+    top: 0;
+    background-color: blue;
     text-align: center;
     font-family: sans-serif;
     font-size: 50px;
     color: azure;
-}
+    z-index: 1000;
+    opacity: 0.4;
+}  
 #heading {
     text-align: center;
     font-family: sans-serif;
@@ -75,14 +97,5 @@ input[type ="radio"] {
 .submit:active {
     background-color: bisque;
 }
-.next {
-    width: 30%;
-    padding: 2vh;
-    font-size: 20px;
-    color: white;
-    border: 1px solid  rgb(9, 241, 9);
-    background-color: rgb(9, 241, 9);
-    border-radius: 10px;
-    cursor: pointer;
-}
+
   

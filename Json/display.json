@@ -1,0 +1,102 @@
+[
+    {
+      "question": "What does HTML stand for?",
+      "options": [
+        "Hyper Text Markup Language",
+        "Happy To Make Lunch",
+        "High Tech Magic Language",
+        "Helpful Texting Message Language"
+      ],
+      "correctAnswer": "Hyper Text Markup Language"
+    },
+    {
+      "question": "What is JavaScript mainly used for on websites?",
+     "options": [
+        "Making the website look pretty",
+        "Adding interactivity and animations",
+        "Sending emails",
+        "Ordering pizza online"
+      ],
+      "correctAnswer": "Adding interactivity and animations"
+    },
+    {
+      "question": "What do we call a box where you can type words or numbers on a website?",
+      "options": [
+        "Texty Box",
+        "Input Field",
+        "Talky Box",
+        "Number Machine"
+      ],
+      "correctAnswer": "Input Field"
+    },
+    {
+      "question": "Which of these is not a color?",
+      "options": [
+        "Red",
+        "Green",
+        "JavaScript",
+        "Blue"
+      ],
+      "correctAnswer": "JavaScript"
+    },
+    {
+      "question": "What do we use to make a website's text bigger or smaller?",
+      "options": [
+        "Zoom In and Out buttons",
+        "A magic wand",
+        "JavaScript spells",
+        "Font size settings"
+      ],
+      "correctAnswer": "Font size settings"
+    },
+    {
+      "question": "Which symbol is used to write a comment in JavaScript?",
+      "options": [
+        "# This is a comment",
+        "// This is a comment",
+        "** This is a comment",
+        "## This is a comment"
+      ],
+      "correctAnswer": "// This is a comment"
+    },
+    {
+      "question": "What do we call a list that shows information in order?",
+      "options": [
+        "Shopping list",
+        "Array",
+        "Number party",
+        "Text zoo"
+      ],
+      "correctAnswer": "Array"
+    },
+    {
+      "question": "What is the result of 5 + 3?",
+      "options": [
+        "53",
+        "8",
+        "35",
+        "58"
+      ],
+      "correctAnswer": "8"
+    },
+    {
+      "question": "What do we call a word that means the same as another word?",
+      "options": [
+        "Synonym",
+        "Antonym",
+        "Homonym",
+        "Pseudonym"
+      ],
+      "correctAnswer": "Synonym"
+    },
+    {
+      "question": "Which animal is known for its long neck?",
+      "options": [
+        "Elephant",
+        "Giraffe",
+        "Hippo",
+        "Kangaroo"
+      ],
+      "correctAnswer": "Giraffe"
+    }
+  ]
