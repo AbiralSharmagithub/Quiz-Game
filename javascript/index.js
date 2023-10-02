@@ -148,14 +148,14 @@ const allQuestions = [
         add +=1;
   
         // Update the score display on the page
-        document.getElementById("add-score").textContent = score;
+        document.getElementById("add-score").textContent = add;
       } else {
         // Change background color to red for wrong answer
         listItem.style.backgroundColor = "red";
         listItem.innerHTML = '<p>Sorry!Incorrect.plz refresh the browser to play this quiz again.</p>';
         sub +=1;
         // Update the score display on the page
-        document.getElementById("sub-score").textContent = wrong;
+        document.getElementById("sub-score").textContent = sub;
       }
   
       // Remove the event listener to prevent multiple submissions for the same question
