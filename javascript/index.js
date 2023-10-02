@@ -103,6 +103,7 @@ const allQuestions = [
   ];     
   const questionList = document.querySelector(".question-list");
   let score = 0; // Initialize the score
+  let wrong= 0;
   allQuestions.forEach((question, index) => {
     const listItem = document.createElement("div");
     listItem.classList.add("question");
@@ -152,9 +153,9 @@ const allQuestions = [
         // Change background color to red for wrong answer
         listItem.style.backgroundColor = "red";
         listItem.innerHTML = '<p>Sorry!Incorrect.plz refresh the browser to play this quiz again.</p>';
-        score +=1;
+        wrong +=1;
         // Update the score display on the page
-        document.getElementById("sub-score").textContent = score;
+        document.getElementById("sub-score").textContent = wrong;
       }
   
       // Remove the event listener to prevent multiple submissions for the same question
