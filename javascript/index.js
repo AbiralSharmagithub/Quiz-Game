@@ -102,7 +102,8 @@ const allQuestions = [
   
   ];     
   const questionList = document.querySelector(".question-list");
-  let score = 0; // Initialize the score
+  let add = 0; // Initialize the score
+  let sub = 0;
   allQuestions.forEach((question, index) => {
     const listItem = document.createElement("div");
     listItem.classList.add("question");
@@ -144,17 +145,17 @@ const allQuestions = [
         listItem.style.backgroundColor = "green";
         listItem.innerHTML = '<p>Correct! Well done You got plus one!,Now move to the next question.</p>';
         // Increment the score for a correct answer
-        score +=1;
+        add +=1;
   
         // Update the score display on the page
-        document.getElementById("add-score").textContent = score;
+        document.getElementById("add-score").textContent = add;
       } else {
         // Change background color to red for wrong answer
         listItem.style.backgroundColor = "red";
         listItem.innerHTML = '<p>Sorry!Incorrect.plz refresh the browser to play this quiz again.</p>';
-        score +=1;
+        sub +=1;
         // Update the score display on the page
-        document.getElementById("sub-score").textContent = score;
+        document.getElementById("sub-score").textContent = sub;
       }
   
       // Remove the event listener to prevent multiple submissions for the same question
